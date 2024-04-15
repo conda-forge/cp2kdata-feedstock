@@ -1,13 +1,13 @@
 {% set name = "cp2kdata" %}
-{% set version = "0.6.8" %}
+{% set version = "0.6.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Cp2kData-{{ version }}.tar.gz
-  sha256: 358ec00510e5118af0010d5b669677a53cc803a848e9293a6c7b7806f63993fb
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a064b2908a4bdba25749f340573a9dce22f6946f6f9a25be8f8607c09bd9a69e
 
 build:
   noarch: python
