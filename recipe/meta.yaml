@@ -35,7 +35,7 @@ requirements:
     - monty
     - pyyaml
     - asciichartpy
-    - pycp2k
+    - pycp2k ==0.2.1
 
 test:
   imports:
