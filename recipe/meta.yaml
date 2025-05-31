@@ -1,5 +1,5 @@
 {% set name = "cp2kdata" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c6d886636f49b5738cc02244813ea9496b366c908531b96ab4b8e0b1cddb4be5
+  sha256: d00cba673287e8a3b33ff00b74bd845f5b5d0c82fe00a785c70caa62d7015233
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
   entry_points:
     - cp2kdata = cp2kdata.cli.cmd:cli
 
